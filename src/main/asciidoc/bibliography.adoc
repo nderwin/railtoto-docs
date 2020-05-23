@@ -1,0 +1,7 @@
+[bibliography]
+= Bibliography
+
+{counter2:bib:0}
+
+- [[rot,{counter:bib}]][{bib}] Peter Josserand.  Rights of Trains.  Simmons-Boardman Publishing Corporation.  1904, 1925, 1945, 1951, 1957.
+- [[oprb,{counter:bib}]][{bib}] The New York, Chicago and St. Louis Railroad Company.  Rules for the Government of the Operating Department. 1943.
