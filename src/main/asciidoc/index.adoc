@@ -1,5 +1,5 @@
 = Railroad Train Order and Timetable Operations
 
-link:glossary.html[Glossary]
+link:glossary{outfilesuffix}[Glossary]
 
-link:bibliography.html[Bibliography]
+link:bibliography{outfilesuffix}[Bibliography]

@@ -47,6 +47,11 @@
         <url>https://github.com/nderwin/railtoto-docs</url>
     </scm>
     
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>        
+        <maven.build.timestamp.format>yyyy-MM-dd HH</maven.build.timestamp.format>  
+    </properties>
+
     <dependencies>
     </dependencies>
     
@@ -55,11 +60,22 @@
         
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <skipIfEmpty>true</skipIfEmpty>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <backend>html</backend>
+                    <attributes>
+                        <revnumber>${project.version}</revnumber>
+                        <revdate>${maven.build.timestamp}</revdate>
+                    </attributes>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -75,6 +91,21 @@
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
+                        <configuration>
+                            <backend>pdf</backend>
+                            <outputDirectory>target/generated-docs/${project.version}/pdf</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>output-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html</backend>
+                            <outputDirectory>target/generated-docs/${project.version}/html</outputDirectory>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

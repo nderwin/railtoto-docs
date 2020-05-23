@@ -1,4 +1,4 @@
 [glossary]
 = Glossary
 
-BLOCK:: link:bibliography.html#rot[+[1]+] A length of track of defined limits, the use of which by trains and engines is governed by block signals, cab signals, or both.
+BLOCK:: link:bibliography{outfilesuffix}#rot[+[rot]+] A length of track of defined limits, the use of which by trains and engines is governed by block signals, cab signals, or both.
