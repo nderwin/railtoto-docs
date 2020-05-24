@@ -1,4 +1,130 @@
 [glossary]
 = Glossary
 
-BLOCK:: link:bibliography{outfilesuffix}#rot[+[rot]+] A length of track of defined limits, the use of which by trains and engines is governed by block signals, cab signals, or both.
+BLOCK:: 
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A length of track of defined limits, the use of which by trains and engines is 
+    governed by block signals, cab signals, or both.
+
+BLOCK SIGNAL::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A fixed signal at the entrance of a block to govern trains and engines entering 
+    and using that block.
+
+CURRENT OF TRAFFIC:: 
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] The movement of trains on a main 
+    track, in one direction, specified by the rules.
+
+DIVISION::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] That portion of a railroad assigned to the supervision of a ______ (usually a 
+    superintendent).  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] That portion of a railroad assigned to the supervision of a Superintendent.
+
+ENGINE::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A unit propelled by any form of energy, or a combination of such units, operated 
+    from a single control, used in train or yard service. +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A machine propelled by any form of energy, and used in train or yard service.
+
+EXTRA TRAIN::
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train not authorized by a time-table schedule.  It may be designated as --  +
+        Extra--for any extra train except passenger extra or work extra;  +
+        Passenger extra--for passenger train extra;  +
+        Work extra--for work train extra.
+
+FIXED SIGNAL::
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A signal of fixed location indicating a condition affecting the movement of a 
+    train or engine.  +
+    Note.--The definition of a "Fixed Signal" covers such signals as switch, train order, block, interlocking, semaphore, disc, 
+    ball, stop boards, yard limit boards, speed limit signs, slow boards or other means for displaying indications that govern 
+    movement of a train or engine.
+
+MAIN TRACK::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A track extending through yards and between stations, upon which trains are 
+    operated by time-table, or train order, or both, or the use of which is governed by block signals.  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A track extending through yards and between stations, upon which trains are 
+    operated by time-table or train order, or both, or the use of which is governed by block signals.
+
+MOTOR CAR::
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A car propelled by any form of energy, and used in train or yard service.
+
+PILOT::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] An employe assigned to a train when the engine-man or conductor, or both, are 
+    not fully acquainted with the physical characteristics or rules of the railroad, or portion of the railroad over which the
+    train is to be moved.  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] An employee assigned to a train when the engineman or conductor, or both, are
+    not fully acquainted with the physical characteristics or rules of the railroad, or portion of the railroad, over which the
+    train is to be moved.
+
+REGULAR TRAIN::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train authorized by a time-table schedule.
+
+SCHEDULE::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] That part of a time-table which 
+    prescribes class, direction, number and movement for a regular train.
+
+SECTION::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] One of two or more trains running on the same schedule displaying signals, or for
+    which signals are displayed. +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] One of two or more trains running on the same schedule, displaying signals or
+    for which signals are displayed.
+
+SIDING::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A track auxiliary to the main 
+    track for meeting or passing trains.
+
+SINGLE TRACK::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A main track upon which trains are 
+    operated in both directions.
+
+STATION::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A place designated on the 
+    time-table by name.
+
+SUB-DIVISION::
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A portion of a division designated by time-table.
+
+SUBDIVISION::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A portion of a division designated by time-table.
+
+SUPERIOR TRAIN::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train having precedence over 
+    another train.
+
+TIME-TABLE::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] The authority for the movement of regular trains subject to the rules.  It 
+    contains the classified schedules with special instructions relating to the movement of trains.  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] The authority for the movement of regular trains subject to the rules.  It 
+    contains classified schedules with special instructions relating to the movement of trains.
+
+TRAIN::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] An engine or more than one engine coupled, with or without cars, displaying
+    markers. +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] An engine, or motor car, or more than one engine, or motor car, coupled, with
+    or without cars, displaying markers.
+
+TRAIN REGISTER::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A book or form which may be used 
+    at designated stations for registering signals displayed, the time of arrival and departure of trains and such other information 
+    as may be prescribed.
+
+TRAIN OF SUPERIOR CLASS::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train given precedence by 
+    time-table.
+
+TRAIN OF SUPERIOR DIRECTION::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train given precedence in the 
+    direction specified by time-table as between opposing trains of the same class.
+
+TRAIN OF SUPERIOR RIGHT::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] link:bibliography{outfilesuffix}#oprb[+[oprb]+] A train given precedence by train 
+    order.
+
+YARD::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] A system of tracks within defined limits provided for the making up of trains,
+    storing of cars, and other purposes, over which movements not authorized by time-table, or by train order, may be made,
+    subject to prescribed signals and rules, or special instructions.  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] A system of tracks within defined limits provided for the making up of trains,
+    storing of cars and other purposes, over which movements not authorized by timetable, or by train order, may be made, subject
+    to prescribed signals and rules, or special instructions.
+
+YARD ENGINE::
+    link:bibliography{outfilesuffix}#rot[+[rot]+] An engine assigned to yard service.  +
+    link:bibliography{outfilesuffix}#oprb[+[oprb]+] An engine assigned to yard service and working within yard limits.

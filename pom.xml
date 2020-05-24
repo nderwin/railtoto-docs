@@ -10,7 +10,7 @@
 
     <version>0.0.0-SNAPSHOT</version>
 
-    <name>Railroad Train Order and Timetable Operations Documentation</name>
+    <name>Railroad Train Order and Time-table Operations Documentation</name>
     <url>https://github.com/nderwin/railtoto-docs</url>
     <inceptionYear>2020</inceptionYear>
     
@@ -49,7 +49,6 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>        
-        <maven.build.timestamp.format>yyyy-MM-dd HH</maven.build.timestamp.format>  
     </properties>
 
     <dependencies>
@@ -75,6 +74,7 @@
                     <attributes>
                         <revnumber>${project.version}</revnumber>
                         <revdate>${maven.build.timestamp}</revdate>
+                        <icons>font</icons>
                     </attributes>
                 </configuration>
                 <dependencies>
@@ -93,6 +93,7 @@
                         </goals>
                         <configuration>
                             <backend>pdf</backend>
+                            <doctype>book</doctype>
                             <outputDirectory>target/generated-docs/${project.version}/pdf</outputDirectory>
                         </configuration>
                     </execution>
@@ -103,7 +104,7 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <backend>html</backend>
+                            <backend>html5</backend>
                             <outputDirectory>target/generated-docs/${project.version}/html</outputDirectory>
                         </configuration>
                     </execution>
