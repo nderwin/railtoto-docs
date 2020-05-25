@@ -1,5 +1,10 @@
 [bibliography]
 = Bibliography
 
-- [[rot]][rot] Peter Josserand.  Rights of Trains.  Simmons-Boardman Publishing Corporation.  1904, 1925, 1945, 1951, 1957.
-- [[oprb]][oprb] The New York, Chicago and St. Louis Railroad Company.  Rules for the Government of the Operating Department. 1943.
+{counter2:bib:0}
+
+- [[rot,{counter:bib}]][{bib}] Josserand, Peter.  Rights of Trains.  Simmons-Boardman Publishing Corporation.  1904, 1925, 1945, 1951, 1957.
+- [[oprb,{counter:bib}]][{bib}] The New York, Chicago and St. Louis Railroad Company.  Rules for the Government of the Operating Department. 1943.
+- [[tera,{counter:bib}]][{bib}] Wills, Paul.  "Telephone Equipment in Railway Applications"  _Telephone Tribute_, David Massey and Bob & Sheri Stritof, unknown date, http://www.telephonetribute.com/railroad_phone_equip.htm
+- [[rtsa,{counter:bib}]][{bib}] Western Electric Company, Inc.  Railroad Telephone and Selective Apparatus.  1922.  http://doc.telephonecollectors.info/dm/22_WE_Railroad_Tel_Selective_Apparatus.pdf
+- [[rtdts,{counter:bib}]][{bib}] Western Electric Company, Inc.  Railway Train Dispatching Telephone Systems Instructions for Use.  ca 1924.  http://doc.telephonecollectors.info/dm/WECo_Instruction_Book_IB-672_-_Railway_Train_Dispatching_Tel_Sys_OCR.pdf
