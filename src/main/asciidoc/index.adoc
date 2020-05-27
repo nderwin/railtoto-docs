@@ -1,4 +1,5 @@
 = Railroad Train Order and Time-table Operations
+:toc:
 
 link:glossary{outfilesuffix}[Glossary]
 

@@ -36,6 +36,11 @@
         </developer>
     </developers>
     
+    <organization>
+        <name>Nathan Erwin</name>
+        <url>https://github.com/nderwin</url>
+    </organization>
+    
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/nderwin/railtoto-docs/issues</url>
@@ -48,7 +53,8 @@
     </scm>
     
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -56,6 +62,7 @@
     
     <build>
         <finalName>${project.artifactId}</finalName>
+        <defaultGoal>clean package</defaultGoal>
         
         <plugins>
             <plugin>
@@ -72,9 +79,11 @@
                 <version>1.6.0</version>
                 <configuration>
                     <attributes>
+                        <author>${project.organization.name}</author>
+                        <icons>font</icons>
+                        <organization>${project.organization.name}</organization>
                         <revnumber>${project.version}</revnumber>
                         <revdate>${maven.build.timestamp}</revdate>
-                        <icons>font</icons>
                     </attributes>
                 </configuration>
                 <dependencies>
@@ -95,6 +104,8 @@
                             <backend>pdf</backend>
                             <doctype>book</doctype>
                             <outputDirectory>target/generated-docs/${project.version}/pdf</outputDirectory>
+                            <outputFile>${project.build.finalName}.pdf</outputFile>
+                            <sourceDocumentName>_master.adoc</sourceDocumentName>
                         </configuration>
                     </execution>
                     <execution>
