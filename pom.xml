@@ -80,6 +80,8 @@
                 <configuration>
                     <attributes>
                         <author>${project.organization.name}</author>
+                        <docdate>${maven.build.timestamp}</docdate>
+                        <doctime />
                         <icons>font</icons>
                         <organization>${project.organization.name}</organization>
                         <revnumber>${project.version}</revnumber>
