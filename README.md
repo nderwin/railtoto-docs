@@ -1,3 +1,5 @@
+![](https://github.com/nderwin/railtoto-docs/workflows/CI/badge.svg)
+
 # railtoto-docs
 
 Documentation in Asciidoc format to describe the software and hardware architecture used in creating the railroad communications simulation for a model railroad.
