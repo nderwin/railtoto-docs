@@ -103,6 +103,11 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
+                            <attributes>
+                                <pdf-theme>railtoto</pdf-theme>
+                                <pdf-themesdir>${project.basedir}/src/main/resources/themes</pdf-themesdir>
+                                <pdf-version>1.7</pdf-version>
+                            </attributes>
                             <backend>pdf</backend>
                             <doctype>book</doctype>
                             <outputDirectory>target/generated-docs/${project.version}/pdf</outputDirectory>
