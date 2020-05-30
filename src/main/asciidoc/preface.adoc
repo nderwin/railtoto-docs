@@ -1,0 +1,17 @@
+[preface]
+= Preface
+
+While working on plans for a model railroad based on the Nickel Plate Railroad in Indiana, I wanted to inject as much realism
+as possible into the operations aspect.  Having multiple stations along the route, possibly setting signals indicating the
+approaching train should stop for new orders, appealed to my desire to operate as realistically as possible.  Unfortunately, this
+also meant a lot more "moving parts" - either I was going to have to wear a lot of hats and do a lot of paperwork, or I would have
+to develop a cast of people to fulfill the multiple roles whenever I wanted to "play trains".
+
+Naturally, being a software engineer, my thoughts turned towards a software solution.  I have been kicking around an idea for a
+long time (since graduate school actually...  now where's that thesis I started...?) about using some form of events to trigger
+actions on the railroad - customers calling for cars to load their goods, a random run-through passenger train, etc.  With the
+development of things like the Raspberry Pi and Docker containers, the idea has started to take more concrete shape.  Instead of
+one large piece of software with a lot of timers kicking off events, what if I could write individual pieces of software to simulate
+communications from the dispatcher to train crews or stations along the line?
+
+The first thing to do is to write some of this down and get serious about the system design...

@@ -104,6 +104,7 @@
                         </goals>
                         <configuration>
                             <attributes>
+                                <toc></toc>
                                 <pdf-theme>railtoto</pdf-theme>
                                 <pdf-themesdir>${project.basedir}/src/main/resources/themes</pdf-themesdir>
                                 <pdf-version>1.7</pdf-version>
@@ -112,7 +113,7 @@
                             <doctype>book</doctype>
                             <outputDirectory>target/generated-docs/${project.version}/pdf</outputDirectory>
                             <outputFile>${project.build.finalName}.pdf</outputFile>
-                            <sourceDocumentName>_master.adoc</sourceDocumentName>
+                            <sourceDocumentName>index.adoc</sourceDocumentName>
                         </configuration>
                     </execution>
                     <execution>
@@ -122,6 +123,9 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
+                            <attributes>
+                                <toc>left</toc>
+                            </attributes>
                             <backend>html5</backend>
                             <outputDirectory>target/generated-docs/${project.version}/html</outputDirectory>
                         </configuration>
