@@ -1,5 +1,5 @@
 [glossary]
-= Glossary
+== Glossary
 
 BLOCK:: 
     A length of track of defined limits, the use of which by trains and engines is 
@@ -11,6 +11,10 @@ BLOCK SIGNAL::
 
 CURRENT OF TRAFFIC:: 
     The movement of trains on a main track, in one direction, specified by the rules. <<rot>> <<oprb>>
+
+[[DISPATCHER]]DISPATCHER::
+    An employee of the railroad who is responsible for coordinating the movement of trains over a designated portion of the 
+    railroad.
 
 DIVISION::
     That portion of a railroad assigned to the supervision of a ______ (usually a 
@@ -52,9 +56,14 @@ MAIN TRACK::
 MOTOR CAR::
     A car propelled by any form of energy, and used in train or yard service. <<oprb>>
 
+[[OPERATOR]]OPERATOR::
+    An employee of the railroad whose duties included copying train orders to be given to passing trains, recording the movement
+    of trains past their assigned station, and providing updates to dispatchers.
+
 PILOT::
     An employe assigned to a train when the engine-man or conductor, or both, are 
-    not fully acquainted with the physical characteristics or rules of the railroad, or portion of the railroad over which the train is to be moved. <<rot>>
+    not fully acquainted with the physical characteristics or rules of the railroad, or portion of the railroad over which the train 
+    is to be moved. <<rot>>
 {nbsp} +
 {nbsp} +
     An employee assigned to a train when the engineman or conductor, or both, are
@@ -110,8 +119,8 @@ TRAIN::
     or without cars, displaying markers. <<oprb>>
 
 TRAIN REGISTER::
-    A book or form which may be used at designated stations for registering signals displayed, the time of arrival and departure of trains and such other information 
-    as may be prescribed. <<rot>> <<oprb>>
+    A book or form which may be used at designated stations for registering signals displayed, the time of arrival and departure of 
+    trains and such other information as may be prescribed. <<rot>> <<oprb>>
 
 TRAIN OF SUPERIOR CLASS::
     A train given precedence by time-table. <<rot>> <<oprb>>

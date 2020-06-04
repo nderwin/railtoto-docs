@@ -1,5 +1,5 @@
 [preface]
-= Preface
+== Preface
 
 While working on plans for a model railroad based on the Nickel Plate Railroad in Indiana, I wanted to inject as much realism
 as possible into the operations aspect.  Having multiple stations along the route, possibly setting signals indicating the

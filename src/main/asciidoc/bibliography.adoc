@@ -1,8 +1,11 @@
 [bibliography]
-= Bibliography
+== Bibliography
 
 - [[[rot,1]]] Josserand, Peter.  Rights of Trains.  Simmons-Boardman Publishing Corporation.  1904, 1925, 1945, 1951, 1957.
 - [[[oprb,2]]] The New York, Chicago and St. Louis Railroad Company.  Rules for the Government of the Operating Department. 1943.
 - [[[tera,3]]] Wills, Paul.  "Telephone Equipment in Railway Applications"  _Telephone Tribute_, David Massey and Bob & Sheri Stritof, unknown date, http://www.telephonetribute.com/railroad_phone_equip.htm
 - [[[rtsa,4]]] Western Electric Company, Inc.  Railroad Telephone and Selective Apparatus.  1922.  http://doc.telephonecollectors.info/dm/22_WE_Railroad_Tel_Selective_Apparatus.pdf
 - [[[rtdts,5]]] Western Electric Company, Inc.  Railway Train Dispatching Telephone Systems Instructions for Use.  ca 1924.  http://doc.telephonecollectors.info/dm/WECo_Instruction_Book_IB-672_-_Railway_Train_Dispatching_Tel_Sys_OCR.pdf
+- [[[tt31,6]]] The New York, Chicago and St. Louis Railroad Company.  Lake Erie and Wester District, Sandusky, New Castle and Indianapolis Divisions Time Table No. 31.  September 30, 1951.
+- [[[loas,7]]] The New York, Chicago and St. Louis Railroad Company.  List of Officers, Agents, Stations, Etc. No. 5.  October, 1951.  https://www.nkphts.org Archives.
+- [[[org,8]]] The New York, Chicago and St. Louis Railroad Company.  Organization Chart.  September 1, 1951.  https://www.nkphts.org Archives.

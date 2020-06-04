@@ -4,6 +4,8 @@ include::colophon.adoc[]
 
 include::preface.adoc[]
 
+include::organization.adoc[]
+
 include::glossary.adoc[]
 
 include::bibliography.adoc[]
