@@ -1,0 +1,129 @@
+== The Organization
+
+In order to model the internal communications that happen on the railroad, first we need to understand the organizational structure
+so we can then model the lines of communication.  Below is a rough organization chart <<org>> I have been able to piece together 
+from various sources.
+
+There are many more people that could be included here, but the focus is on the principal people involved with the portion of the
+railroad being modeled, namely the Indianapolis Division of the Lake Erie & Western District.  It is not quite clear what the 
+exact hierarchy is for Assistant Train Masters, Chief Dispatchers, General Yardmasters, Yardmasters, Dispatchers, and Agents is,
+as the organization chart I have for reference mentions all of these roles as reporting to a box containing the Assistant 
+Superintendent and Train Masters.
+
+There are multiple Agents <<loas>>, but it is unclear to whom they would report.  Finally, there are the other positions mentioned 
+in the time-table <<tt31>>, but fitting them into the picture is difficult without definitive sources of information.
+
+[graphviz,org,png]
+----
+graph ORG {
+
+  ranksep=0.3;
+  splines=line;
+
+  node[shape=box];
+
+  Board   [ label = "Board of Directors\nCleveland" ];
+  Pres    [ label = "President\nL. L. White\nCleveland" ];
+  VPO     [ label = "Vice President, Operation\nF. S. Hales\nCleveland" ];
+  GM      [ label = "General Manager\nJ. C. Wallace\nCleveland" ];
+  AGM     [ label = "Assistant General Manager\nA. D. Peters\nCleveland" ];
+  CMO     [ label = "Chief Mechanical Officer\nO. R. Pendy\nCleveland" ];
+
+  MM      [ label = "Master Mechanic\nB. O'Donnell\nFrankfort" ];
+  RFE     [ label = "Road Foreman of Engines\nD. I. Evans\nPeru" ];
+  GS      [ label = "General Superintendent\nM. B. Phipps\nBellevue" ];
+  SUPTTX  [ label = "Superintendent Transportation\nD. M. Bender\nCleveland" ];
+  AGS     [ label = "Assistant General Superintendent\nG. R. Bowman\nBellevue" ];
+  SUPT    [ label = "Superintendent\nL. E. & W. District\nE. B. Hunter\nMuncie" ];
+  ASUPT   [ label = "Assistant Superintendent\nR. Clear\nMuncie"];
+  TM      [ label = "Train Master\nIndianapolis Division\nH. R. Scott\nPeru" ];
+  CD      [ label = "Chief Train Dispatcher\nW. L. Brown\nMuncie", fontcolor=blue ];
+  CE      [ label = "Chief Engineer\nH. F. Whitmore\nCleveland" ];
+  ACE     [ label = "Assistant Chief Engineer\nC. R. Wright\nCleveland" ];
+  DE      [ label = "Division Engineer\nM. B. Allen\nFrankfort" ];
+  GYM1    [ label = "General Yardmaster\nL. R. Smitson\nIndianapolis Yard" ];
+  GYM2    [ label = "General Yardmaster\nH. W. Stanfield\nPeru Yard" ];
+
+  subgraph agentoperators {
+    node[shape=box,fontcolor=blue]
+    subgraph cluster_agents1 {
+      color=invis;
+      AG5     [ label = "Agent\nO. J. Rensburger\nNoblesville" ];
+      AG4     [ label = "Agent\nH. I. Turner\nFishers" ];
+      AG3     [ label = "Agent\nW. E. Cummins\nCastleton" ];
+      AG2     [ label = "Agent\nH. L. Markey\nU. S. Yards\nIndianapolis" ];
+      AG1     [ label = "Agent\nE. J. Schmoll\nIndianapolis" ];
+    };
+
+    subgraph cluster_agents2 {
+      color=invis;
+      AG10    [ label = "Agent\nJ. W. Cummins\nSharpsville" ];
+      AG9     [ label = "Agent\nM. A. Ogle\nTipton" ];
+      AG8     [ label = "Agent\nM. Herron\nAtlanta" ];
+      AG7     [ label = "Agent\nW. Gibson\nArcadia" ];
+      AG6     [ label = "Agent\nM. W. Marquis\nCicero" ];
+    };
+
+    subgraph cluster_agents3 {
+      color=invis;
+      AG15    [ label = "Agent\nM. P. Dalton\nMacy" ];
+      AG14    [ label = "Agent\nW. S. Steele\nDenver" ];
+      AG13    [ label = "Agent\nC. R. McElwee\nPeru" ];
+      AG12    [ label = "Agent\nD. C. Shreve\nBunker Hill" ];
+      AG11    [ label = "Agent\nC. L. Davis\nBennetts" ];
+    };
+
+    subgraph cluster_agents4 {
+      color=invis;
+      AG20    [ label = "Agent\nV. L. Lutes\nStillwell" ];
+      AG19    [ label = "Agent\nM. L. Bouse\nWalkerton" ];
+      AG18    [ label = "Agent\nGeorge Porter\nPlymouth" ];
+      AG17    [ label = "Agent\nC. W. Reeve\nArgos" ];
+      AG16    [ label = "Agent\nE. J. Follin\nRochester" ];
+    };
+
+    subgraph cluster_agents5 {
+      color=invis;
+      AG22    [ label = "Agent\nK. W. Beecher\nMichigan City" ];
+      AG21    [ label = "Agent\nW. A. Jacob\nLa Porte" ];
+    };
+
+    AG1 -- AG6 -- AG11 -- AG16 -- AG21[ style = invis, weight = 10 ];
+  }
+
+  node[shape=none, width=0, height=0, label=""];
+
+  Board -- Pres;
+  Pres -- VPO;
+
+  {rank=same; GM; CE; CMO;};
+  VPO -- GM;
+  VPO -- CE;
+  CE -- ACE;
+  ACE -- DE;
+  VPO -- CMO;
+  CMO -- MM;
+  MM -- RFE;
+
+  {rank=same; AGM; GS; SUPTTX;};
+  GM -- AGM;
+  GM -- GS;
+  GM -- SUPTTX;
+
+  GS -- AGS;
+  AGS -- SUPT;
+  SUPT -- ASUPT;
+  ASUPT -- TM;
+
+  {rank=same; CD; GYM1; GYM2;};
+  TM -- CD;
+  TM -- GYM1;
+  TM -- GYM2;
+
+  CD -- AG1[ style = invis, weight = 10 ];
+}
+----
+
+For the simulation, I will model the communication between two of the roles mentioned above - <<OPERATOR,Operator>> and 
+<<DISPATCHER,Dispatcher>>.  Note that we don't see Operator mentioned, but it seems that these responsibilities were fulfilled by 
+the Agent on this segment of the railroad.

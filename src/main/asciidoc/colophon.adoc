@@ -1,5 +1,5 @@
 [colophon]
-= Colophon
+== Colophon
 
 This work is the culmination of research for designing and implementing an operations simulation for a model railroad, specifically
 of the New York, Chicago and St. Louis Railroad (Nickel Plate) in Indiana.
