@@ -1,0 +1,93 @@
+@startuml
+hide footbox
+skinparam monochrome true
+
+actor Dispatcher as d
+boundary "Selector\nCalling\nApparatus" as sca
+control "Pole\nCharger\nRelay" as pcr
+control "Selector A" as sa
+control "Selector B" as sb
+control "Selector C" as sc
+
+activate d
+
+d -> sca : operates selector key
+activate sca
+
+    sca -> pcr : send time pulse group
+    activate pcr
+
+        par
+            pcr -> sa : pulses
+            activate sa
+
+                sa -> sa : advance code wheel\nto time position
+                activate sa
+                sa --> sa
+                deactivate sa
+
+            sa --> pcr
+        else
+            pcr -> sb : pulses
+            activate sb
+
+                sb -> sb : advance code wheel\nto time position
+                activate sb
+                sb --> sb
+                deactivate sb
+
+            sb --> pcr
+        else
+            pcr -> sc : pulses
+            activate sc
+
+                sc -> sc : advance code wheel\nto time position
+                activate sc
+                sc --> sc
+                deactivate sc
+
+            sc --> pcr
+        end par
+
+    pcr --> sca
+    deactivate pcr
+
+    sca -> pcr : sent time pulses
+    activate pcr
+
+        par
+            pcr -> sa : time pulses
+            
+                sa -> sa : ring bell
+                activate sa
+                sa --> sa
+                deactivate sa
+
+            sa --> pcr
+            deactivate sa
+        else
+            pcr -> sb : time pulses
+            
+                sb -> sb : ring bell
+                activate sb
+                sb --> sb
+                deactivate sb
+
+            sb --> pcr
+            deactivate sb
+        else
+            pcr -> sc : time pulses
+            
+                sc -> sc : ring bell
+                activate sc
+                sc --> sc
+                deactivate sc
+
+            sc --> pcr
+            deactivate sc
+        end par
+
+    pcr --> sca
+    deactivate pcr
+
+@enduml

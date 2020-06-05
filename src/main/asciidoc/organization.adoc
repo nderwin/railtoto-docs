@@ -13,6 +13,7 @@ Superintendent and Train Masters.
 There are multiple Agents <<loas>>, but it is unclear to whom they would report.  Finally, there are the other positions mentioned 
 in the time-table <<tt31>>, but fitting them into the picture is difficult without definitive sources of information.
 
+[#orgchart,caption='',title='{listing-caption} {counter:refnum}. Consolidated organization chart']
 [graphviz,org,png]
 ----
 graph ORG {

@@ -1,10 +1,13 @@
 = Railroad Train Order and Time-table Operations
+:listing-caption: Figure
 
 include::colophon.adoc[]
 
 include::preface.adoc[]
 
 include::organization.adoc[]
+
+include::communication.adoc[]
 
 include::glossary.adoc[]
 

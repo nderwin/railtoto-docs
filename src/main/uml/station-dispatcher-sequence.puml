@@ -1,0 +1,26 @@
+@startuml
+hide footbox
+skinparam monochrome true
+
+actor "Agent C" as ac
+boundary "Selector C" as sc
+actor Dispatcher as d
+
+activate ac
+activate d
+
+ac -> sc : boop beep boop
+activate sc
+
+    sc -> d : Ring!
+    d --> sc : Hello?
+
+sc --> ac : Hello?
+
+sc -> d : conversation
+...
+d -> sc
+
+deactivate sc
+
+@enduml

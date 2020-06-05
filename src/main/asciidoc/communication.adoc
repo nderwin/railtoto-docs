@@ -1,0 +1,29 @@
+== Telephone Communications
+
+For the time period that I am modeling, telephone communication was used between stations, however, it was not like the systems
+that were developed for consumer use.  One can think of the system as more like a private network, where the only locations
+connected were those owned and operated by the railroad.  Each railroad had their own private network, so voice communication
+between railroads could only occur at a location where each railroad had their separate telephone lines connected.
+
+The most common system was developed by Western Electric, and operated by sensing changes in telephone line voltage to set up
+the connection between two locations.  The interesting thing to note is that all locations were connected to
+the line such that all of them would know when someone was dialing a particular location.  Each location received the line 
+modulation, but only the location with the exact dialing number would then switch into communication mode, while the rest would
+fall back to an awaiting status.  <<rtsa>> <<rtdts>>  The sequence of events for the dispatcher calling a station are illustrated 
+in <<dispatchertostation>>
+
+[#dispatchertostation,caption='',title='{listing-caption} {counter:refnum}. Dispatcher to station dialing sequence']
+plantuml::../uml/dispatcher-station-sequence.puml[dispatcher-station-sequence.png]
+
+Additionally, a time signal could be sent from the dispatcher to each station to synchronize clocks.  This is an important function
+as each station needs to accurately report exactly when trains pass.  Failure to know the position of trains along the line could 
+result in the dreaded "cornfield meet", i.e., one train running into another.  The time sequence is illustrated in 
+<<dispatchertimetoallstations>>.
+
+[#dispatchertimetoallstations,caption='',title='{listing-caption} {counter:refnum}. Dispatcher sending time signal to all stations']
+plantuml::../uml/dispatcher-station-time-sequence.puml[dispatcher-station-time-sequence.png]
+
+The third scenario to describe is when the station initiates a call, illustrated in <<stationtodispatcher>>.
+
+[#stationtodispatcher,caption='',title='{listing-caption} {counter:refnum}. Station to dispatcher dialing sequence']
+plantuml::../uml/station-dispatcher-sequence.puml[station-dispatcher-sequence.png]
